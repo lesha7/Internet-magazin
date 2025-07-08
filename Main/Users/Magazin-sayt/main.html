@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ФигуркиМир</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="main.html">Главная</a>
+      <a href="tovari.html">Товары</a>
+      <a href="basket.html">Корзина</a>
+      <button onclick="login()">Войти</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Секция 1: Приветствие -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Добро пожаловать в ФигуркиМир!</h1>
+        <p>Самые уникальные фигурки для коллекционеров</p>
+      </div>
+    </section>
+
+    <!-- Секция 2: Карточки -->
+    <section class="products">
+      <article class="card card--product1">
+        <div class="card-text">
+          <h3>Michael Jackson</h3>
+          <p>Цена: 6 000 ₽</p>
+        </div>
+      </article>
+      <article class="card card--product2">
+        <div class="card-text">
+          <h3>Black Panther</h3>
+          <p>Цена: 8 000 ₽</p>
+        </div>
+      </article>
+      <article class="card card--product3">
+        <div class="card-text">
+          <h3>Chainsaw Man Chase</h3>
+          <p>Цена: 8 000 ₽</p>
+        </div>
+      </article>
+        <!-- Новая кнопка -->
+        <div class="see-more">
+          <a href="tovari.html" class="see-more-btn">Больше</a>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <section class="about">
+        <h3>О Компании</h3>
+        <p>Контактная информация</p>
+        <p>ООО "ФигуркиМир"</p>
+        <p>Адрес: 123456, г. Москва, ул. Игровая, д. 42</p>
+        <p>Телефон: +7 (495) 123-45-67</p>
+        <p>Email: info@figuresworld.ru</p>
+      </section>
+      <section class="social">
+        <p>Подписывайтесь на нас в соцсетях</p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

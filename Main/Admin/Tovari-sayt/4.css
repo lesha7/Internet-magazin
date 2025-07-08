@@ -1,0 +1,79 @@
+/* Общие стили */
+body {
+    font-size: 25px;
+    background-color: #121212; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+header {
+    background-color: #1e1e1e; /* Тёмный фон для шапки */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #ffffff; /* Белый текст для заголовка */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b0b0b0; /* Светло-серый текст для ссылок */
+}
+
+nav a:hover {
+    color: #ffffff; /* Белый текст при наведении */
+}
+
+/* Основное содержимое */
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1e1e1e; /* Тёмный фон для футера */
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+
+
+/* Медиа-запрос для экранов меньше 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+
+    header h1 {
+        font-size: 24px; /* Уменьшаем заголовок */
+    }
+
+    nav ul {
+        flex-direction: column; /* Вертикальное меню */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #columnchart_material {
+        width: 100% !important; /* График на всю ширину */
+        height: 400px !important; /* Уменьшаем высоту графика */
+        left: 0 !important; /* Убираем смещение */
+    }
+}

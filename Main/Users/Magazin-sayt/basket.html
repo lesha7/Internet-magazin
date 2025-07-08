@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Корзина - ФигуркиМир</title>
+  <link rel="stylesheet" href="basket.css" />
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="main.html">Главная</a>
+      <a href="tovari.html">Товары</a>
+      <a href="basket.html">Корзина</a>
+      <button onclick="login()">Войти</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h2>Ваша корзина</h2>
+      <div id="cart-items" class="cart-items">
+        <!-- Товары будут загружены сюда -->
+      </div>
+      
+      <div class="cart-summary">
+        <div class="total-price">
+          <strong>Итого:</strong>
+          <span id="total-amount">0 ₽</span>
+        </div>
+        <button class="checkout-btn">Оформить заказ</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <section class="about">
+        <h3>О Компании</h3>
+        <p>Контактная информация</p>
+        <p>ООО "ФигуркиМир"</p>
+        <p>Адрес: 123456, г. Москва, ул. Игровая, д. 42</p>
+        <p>Телефон: +7 (495) 123-45-67</p>
+        <p>Email: info@figuresworld.ru</p>
+      </section>
+      <section class="social">
+        <p>Подписывайтесь на нас в соцсетях</p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="basket.js"></script>
+</body>
+</html>

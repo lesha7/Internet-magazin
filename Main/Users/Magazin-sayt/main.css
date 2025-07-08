@@ -1,0 +1,156 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+  }
+  /* Хедер */
+  header {
+    background-color: #1e1e1e;
+    padding: 1rem 0;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+  }
+  nav a.active {
+  color: #00ffcc !important;
+  font-weight: bold;
+}
+  nav a:hover {
+    color: #00ffcc;
+  }
+  button {
+    background: none;
+    border: 2px solid #00ffcc;
+    color: #00ffcc;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  button:hover {
+    background-color: #00ffcc;
+    color: black;
+  }
+  
+  /* Секция 1 */
+  .hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  /* Секция 2 */
+  .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+/* Стили для карточек */
+.card {
+  width: 30%;
+  height: 250px;
+  background-size: 600px;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+  
+.card-text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+  
+  .card--product1 {
+    background-image: url('images/product7.jpg');
+  }
+  .card--product2 {
+    background-image: url('images/product2.jpg');
+  }
+  .card--product3 {
+    background-image: url('images/product3.jpg');
+  }
+
+/* Стили для кнопки "Больше" */
+.see-more {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.see-more-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #00ffcc;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.see-more-btn:hover {
+  background-color: #00e0b0;
+  transform: scale(1.05);
+}
+
+  /* Футер */
+  footer {
+    background-color: #1e1e1e;
+    padding: 2rem 0;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
+  .about p, .social p {
+    margin: 0.5rem 0;
+  }

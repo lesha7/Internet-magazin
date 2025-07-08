@@ -1,0 +1,216 @@
+body {
+    font-size: 25px;
+    background-color: #121212; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+header {
+    background-color: #1e1e1e; /* Тёмный фон для шапки */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #ffffff; /* Белый текст для заголовка */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b0b0b0; /* Светло-серый текст для ссылок */
+}
+
+nav a:hover {
+    color: #ffffff; /* Белый текст при наведении */
+}
+
+/* Дополнительные стили для основного содержимого и футера */
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1e1e1e; /* Тёмный фон для футера */
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+/* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1e1e1e; /* Тёмный фон для таблицы */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444; /* Тёмная граница */
+}
+
+th {
+    background-color: #2c2c2c; /* Тёмный фон для заголовков */
+    font-weight: bold;
+    color: #ffffff; /* Белый текст для заголовков */
+}
+
+tr:hover {
+    background-color: #3a3a3a; /* Тёмно-серый фон при наведении */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #252525; /* Чуть светлее для чётных строк */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #1e1e1e; /* Темнее для нечётных строк */
+}
+
+/* Стили для панели добавления товара */
+form {
+    background-color: #2c2c2c; /* Тёмный фон для формы */
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Более тёмная тень */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff; /* Белый текст для меток */
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1e1e1e; /* Тёмный фон для полей ввода */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+form button {
+    background-color: #4CAF50; /* Зелёная кнопка */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #45a049; /* Темнее при наведении */
+}
+
+/* Кнопки */
+.btn-edit {
+    background-color: #4CAF50; /* Зелёная кнопка */
+    color: white;
+    border: none;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #f44336; /* Красная кнопка */
+    color: white;
+    border: none;
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f;
+}
+
+.btn-save {
+    background-color: #2196F3; /* Синяя кнопка */
+    color: white;
+    border: none;
+}
+
+.btn-save:hover {
+    background-color: #1976D2;
+}
+
+.btn-cancel {
+    background-color: #9E9E9E; /* Серая кнопка */
+    color: white;
+    border: none;
+}
+
+.btn-cancel:hover {
+    background-color: #757575;
+}
+
+.file-input {
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1e1e1e; /* Тёмный фон */
+}
+
+
+
+
+/* Медиа-запрос для экранов меньше 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+
+    header h1 {
+        font-size: 24px; /* Уменьшаем заголовок */
+    }
+
+    nav ul {
+        flex-direction: column; /* Вертикальное меню */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    form {
+        max-width: 100%; /* Форма на всю ширину */
+        padding: 10px; /* Уменьшаем отступы */
+    }
+
+    table {
+        font-size: 14px; /* Уменьшаем размер шрифта в таблице */
+    }
+
+    th, td {
+        padding: 8px; /* Уменьшаем отступы в ячейках */
+    }
+
+    .btn {
+        padding: 6px 10px; /* Уменьшаем размер кнопок */
+        font-size: 14px; /* Уменьшаем размер шрифта кнопок */
+    }
+}
